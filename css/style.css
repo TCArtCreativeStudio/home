@@ -7,6 +7,44 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+.team-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* ช่องว่างระหว่างรูปกับข้อความ */
+}
+
+.navbar-brand img {
+  height: 30px;
+  /* ถ้าอยากให้แน่นอนว่ารูปไม่ทำให้บรรทัดยืดออก */
+  display: block;
+}
+
+.caption h3 {
+  font-size: clamp(10px, 1.2vw, 16px); /* ปรับขนาดตามหน้าจอ */
+  white-space: nowrap; /* ไม่ให้ขึ้นบรรทัดใหม่ */
+  overflow: hidden; /* ซ่อนถ้าเกิน */
+}
+
+.caption p {
+  font-weight: bold;
+  color: #a7c44c;
+}
+.contact-box {
+  border: 2px solid white !important;
+  background-color: rgba(0,0,0,0.5) !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  display: inline-block !important;
+  color: white !important;
+}
+
+
 h2 {
 	margin: 0 0 20px 0;
 	font-weight: 500;

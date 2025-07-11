@@ -39,23 +39,38 @@
   <div class="container"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand page-scroll" href="#page-top">TC ART CREATIVE Studio</a> </div>
-    
+      <button type="button" 
+              class="navbar-toggle collapsed" 
+              data-toggle="collapse" 
+              data-target="#bs-example-navbar-collapse-1" 
+              aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+      </button>
+
+      <a class="navbar-brand page-scroll" href="#page-top">
+        <img src="img/logo.jpg" alt="Logo">
+        TC ART CREATIVE Studio
+      </a>
+    </div>
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about" class="page-scroll">About</a></li>
         <li><a href="#services" class="page-scroll">Services</a></li>
-        <li><a href="#material" class="page-scroll">Matterial</a></li>
+        <li><a href="#material" class="page-scroll">Material</a></li>
         <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
         <li><a href="#team" class="page-scroll">Team</a></li>
-        <li><a href="#contact" class="page-scroll">Contact</a></li>
+        <li><a href="#contact" class="page-scroll contact-box">Contact</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
   </div>
 </nav>
+
 <!-- Header -->
 <header id="header">
   <div class="intro">
@@ -82,10 +97,8 @@
       <div class="col-xs-12 col-md-6 text-center"> <img src="img/about.jpg" class="img-responsive" alt=""> </div>
       <div class="col-xs-12 col-md-6">
         <div class="about-text">
-          <h3>The Studio</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <h3>How We Work</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+          <h3>TC art creative studio</h3>
+          <p>การถกเถียง สู่การแลกเปลี่ยนความคิด ปรับตัว สตูดิโอเล็กๆ ที่มีสีสัน และยอมรับในความสามารถตนเองและผู้อื่นแม้ต่างที่มา ต่างสถาบัน แต่พวกเรามีอุดมการณ์เดียวกัน คือ "การสร้างสรรค์ผลงานศิลปะด้วยเทคนิคที่หลากหลาย 'ผลักดันซึ่งกันและกัน' ภายใต้แนวคิดที่ว่า "ศิลปะ คือ เรื่องราวที่ไม่มีคำว่าสิ้นสุด"</p>
         </div>
       </div>
     </div>
@@ -807,98 +820,136 @@
 <!-- Team Section -->
 <div id="team" class="text-center">
   <div class="overlay">
-    <div class="container">
+    <div class="container--fluid">
       <div class="col-md-8 col-md-offset-2 section-title">
         <h2>Meet the Team</h2>
         <hr>
-        <p>เขียนอะไรตรงยี้สักกะหน่อย</p>
       </div>
-      <div id="row">
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="team-img">
+
+      <!-- Manager Row -->
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-md-offset-4 team">
+          <div class="thumbnail">
+            <img src="img/team/01.jpg" alt="Manager" class="team-img">
             <div class="caption">
-              <h3>น้องนิทาน</h3>
-              <p>Director</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>Komlom</h3>
-              <p>Senior Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>พี่หนุ่ย</h3>
-              <p>Senior Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>เด็กหญิงพิมพ์ไพเราะ</h3>
-              <p>Project Manager</p>
+              <h3>PANNARUEWAN CHANBUALA<br> (KOMLOM)</h3>
+              <p>MANAGER</p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Artist Row -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail">
+            <img src="img/team/02.jpg" alt="NUI" class="team-img">
+            <div class="caption">
+              <h3>SATORN SANAOSENG<br> (NUI)</h3>
+              <p>ARTIST</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail">
+            <img src="img/team/03.jpg" alt="SUNNY" class="team-img">
+            <div class="caption">
+              <h3>WASAN SOMNUAK<br> (SUNNY)</h3>
+              <p>ARTIST</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail">
+            <img src="img/team/04.jpg" alt="OHM" class="team-img">
+            <div class="caption">
+              <h3>WARASAWAT BOONCHUWIT<br> (OHM)</h3>
+              <p>ARTIST</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail">
+            <img src="img/team/05.jpg" alt="JAME" class="team-img">
+            <div class="caption">
+              <h3>NATTHA LOMPO<br> (THING-LY)</h3>
+              <p>ARTIST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Designer Row -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-md-offset-3 team">
+          <div class="thumbnail">
+            <img src="img/team/06.jpg" alt="NOOK" class="img-circle team-img">
+            <div class="caption">
+              <h3>NALINRAT BOONTHAM<br> (NOOK)</h3>
+              <p>DESIGNER</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail">
+            <img src="img/team/07.jpg" alt="THING-LY" class="img-circle team-img">
+            <div class="caption">
+              <h3>ANUPHONG PHONGTHAI<br> (JAME)</h3>
+              <p>DESIGNER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
+
 <!-- Contact Section -->
-<div id="contact">
+<div id="contact" class="text-center" style="background: #f9f9f9; padding: 60px 0;">
   <div class="container">
     <div class="section-title text-center">
       <h2>Contact Us</h2>
       <hr>
-      <p>เขียนอะไรตรงนี้ได้นะ 
-      </p>
+      <p>หากคุณมีคำถาม ข้อเสนอแนะ หรือต้องการติดต่อเรา สามารถส่งข้อความหรือเยี่ยมชมเราได้ตามที่อยู่ด้านล่างนี้</p>
     </div>
-    <div class="col-md-4">
-      <h3>Contact Info</h3>
-      <div class="contact-item"> <span>Address</span>
-        <p>อยู๋ไสน้อออออออ<br>
-          รอใส่ข้อมูลงับ</p>
-      </div>
-      <div class="contact-item"> <span>Email</span>
-        <p>tc.art.creative@gmail.com</p>
-      </div>
-      <div class="contact-item"> <span>Phone</span>
-        <p> 02-1250279</p>
-      </div>
-    </div>
-    <div class="col-md-8">
-      <h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
+
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-md-4 text-left">
+        <h3>Contact Info</h3>
+        <div class="contact-item">
+          <span><strong>Address</strong></span>
+          <p>TC Art Creative., Ltd.<br>
+          บริษัท ทีซี อาร์ต ครีเอทีฟ จำกัด (สำนักงานใหญ่)<br>
+          1178 / 473  ถนนเลียบคลองรังสิต ตำบลประชาธิปัตย์ อำเภอธัญบุรี<br>
+          จังหวัดปทุมธานี 12130<br>
+          เลขประจำตัวผู้เสียภาษี 0135567033311</p>
         </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
+        <div class="contact-item">
+          <span><strong>Email</strong></span>
+          <p>TC.art.creative@gmail.com</p>
         </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
-      </form>
+        <div class="contact-item">
+          <span><strong>Phone</strong></span>
+          <p>02-1250279, 092-9154565</p>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-8">
+        <h3>Company Location</h3>
+        <div style="width: 100%; height: 300px; border-radius: 10px; overflow: hidden; margin-bottom: 30px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.6015933307654!2d100.63353347509444!3d13.982303986434008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d7f0070a8570b%3A0x407aed6bbe838852!2sTc%20art%20creative%20Studio!5e0!3m2!1sth!2sth!4v1752224781896!5m2!1sth!2sth"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
 <div id="footer">
   <div class="container text-center">
     <div class="social">
