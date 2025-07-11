@@ -7,34 +7,6 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
-.team-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* ช่องว่างระหว่างรูปกับข้อความ */
-}
-
-.navbar-brand img {
-  height: 30px;
-  /* ถ้าอยากให้แน่นอนว่ารูปไม่ทำให้บรรทัดยืดออก */
-  display: block;
-}
-
-.caption h3 {
-  font-size: clamp(10px, 1.2vw, 16px); /* ปรับขนาดตามหน้าจอ */
-  white-space: nowrap; /* ไม่ให้ขึ้นบรรทัดใหม่ */
-  overflow: hidden; /* ซ่อนถ้าเกิน */
-}
-
-.caption p {
-  font-weight: bold;
-  color: #a7c44c;
-}
 .contact-box {
   border: 2px solid white !important;
   background-color: rgba(0,0,0,0.5) !important;
@@ -113,7 +85,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #a7c44c;
+	background: #9f6d19;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	border: 0;
@@ -146,7 +118,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: #a7c44c;
+	color: #ffdea4;
 	font-weight: 400;
 	font-size: 15px;
 	padding: 5px 0;
@@ -157,6 +129,16 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #eee;
 }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* ช่องว่างระหว่างโลโก้กับข้อความ */
+  }
+
+  .navbar-brand img {
+    height: 30px;
+    display: block; /* ลบช่องว่างใต้รูป */
+  }
 .on {
 	background-color: #363636 !important;
 	padding: 0 !important;
@@ -170,8 +152,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #a7c44c;
-	border-color: #a7c44c;
+	background-color: #9f6d19;
+	border-color: #9f6d19;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
@@ -185,8 +167,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .btn-custom {
 	text-transform: uppercase;
 	color: #fff;
-	text-shadow: 0 0 3px #859c3c;
-	background-color: #a7c44c;
+	text-shadow: 0 0 3px #9f6d19;
+	background-color: #9f6d19;
 	border: 0;
 	padding: 14px 20px;
 	margin: 0;
@@ -197,7 +179,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: rgba(255,255,255,0.8);
-	background-color: #94ae44;
+	background-color: #72693b;
 }
 /* Header Section */
 .intro {
@@ -223,7 +205,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	letter-spacing: -1px;
 }
 .intro span {
-	color: #a7c44c;
+	color: #9f6d19;
 	font-weight: 600;
 }
 .intro p {
@@ -254,7 +236,7 @@ header .intro-text {
 #about img {
 	display: inline-block;
 	border-radius: 100px 0 100px 0;
-	box-shadow: -15px 0 #a7c44c;
+	box-shadow: -15px 0 #9f6d19;
 }
 #about p {
 	line-height: 24px;
@@ -270,7 +252,7 @@ header .intro-text {
 #services img {
 	width: 300px;
 	border-radius: 75px 0 75px 0;
-	box-shadow: 15px 0 #a7c44c;
+	box-shadow: 15px 0 #9f6d19;
 }
 #services h3 {
 	padding: 10px 0;
@@ -304,11 +286,11 @@ ol.type li {
 }
 
 ol.type li a {
-  color: #a7c44c;
+  color: #9f6d19;
   font-weight: 400;
   font-size: 15px;
   padding: 10px 20px;
-  border: 2px solid #a7c44c;
+  border: 2px solid #9f6d19;
   border-radius: 10px 0 10px 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -322,11 +304,11 @@ ol.type li a {
 }
 
 ol.type li a.active {
-	background: #a7c44c;
+	background: #9f6d19;
 	color: #fff;
 }
 ol.type li a:hover {
-	background: #a7c44c;
+	background: #9f6d19;
 	color: #fff;
 }
 .isotope-item {
@@ -404,12 +386,12 @@ ol.type li a:hover {
 /* Team Section */
 #team {
 	color: #fff;
-	background: #a7c44c url(../img/team-bg.jpg) center top no-repeat;
+	background: #9f6d19 url(../img/team-bg.jpg) center top no-repeat;
 	background-size: cover;
 }
 #team .overlay {
 	padding: 120px 0;
-	background: rgba(167, 196, 76, 0.9);
+	background: rgba(125, 85, 50, 0.9);
 }
 #team h2, #team p {
 	color: #fff;
@@ -427,7 +409,7 @@ ol.type li a:hover {
 	width: 200px;
 	height: 200px;
 	border-radius: 50px 0 50px 0;
-	box-shadow: 15px 0 #96b044;
+	box-shadow: 15px 0 #c4975c;
 }
 #team .thumbnail {
 	background: transparent;
@@ -526,7 +508,7 @@ color: #777;
 #footer .social i.fa {
 	font-size: 26px;
 	padding: 4px;
-	color: #a7c44c;
+	color: #9f6d19;
 	transition: all 0.3s;
 }
 #footer .social i.fa:hover {
@@ -539,5 +521,5 @@ color: #777;
 	color: #999;
 }
 #footer a:hover {
-	color: #a7c44c;
+	color: #9f6d19;
 }
