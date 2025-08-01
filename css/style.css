@@ -101,63 +101,75 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 /* Navigation */
+/* ปรับเมนูปกติ */
+.navbar-default .navbar-nav > li > a {
+  color: #000000; /* ปกติ */
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 5px 0;
+  margin: 10px 15px 0 15px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #6f400e; /* Hover */
+}
+
+/* Navbar Container */
 #menu {
-	padding: 20px;
-	transition: all 0.8s;
+  padding: 20px;
+  transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
-	border-color: rgba(231, 231, 231, 0);
+  background-color: rgb(186, 186, 186);
+  border-color: rgba(255, 255, 255, 0.633);
 }
 #menu a.navbar-brand {
-	font-size: 22px;
-	color: #eee;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+  font-size: 22px;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-#menu.navbar-default .navbar-nav > li > a {
-	text-transform: uppercase;
-	color: #ffdea4;
-	font-weight: 400;
-	font-size: 15px;
-	padding: 5px 0;
-	border: 2px solid transparent;
-	letter-spacing: 0.5px;
-	margin: 10px 15px 0 15px;
-}
-#menu.navbar-default .navbar-nav > li > a:hover {
-	color: #eee;
-}
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* ช่องว่างระหว่างโลโก้กับข้อความ */
-  }
 
-  .navbar-brand img {
-    height: 30px;
-    display: block; /* ลบช่องว่างใต้รูป */
-  }
-.on {
-	background-color: #363636 !important;
-	padding: 0 !important;
-	padding: 10px 0 !important;
+/* Logo จัดกึ่งกลาง */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* ช่องว่างระหว่างโลโก้กับข้อความ */
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #eee !important;
-	background-color: transparent;
+.navbar-brand img {
+  height: 30px;
+  display: block; /* ลบช่องว่างใต้รูป */
 }
+
+/* Active Menu Style */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff !important;             /* ตัวอักษรสีขาว */
+  background-color: #9f6d19 !important; /* พื้นหลังสีน้ำตาลทอง */
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+/* ปุ่ม toggle mobile */
 .navbar-toggle {
-	border-radius: 0;
+  border-radius: 0;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #9f6d19;
-	border-color: #9f6d19;
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #9f6d19;
+  border-color: #9f6d19;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
-	background-color: #FFF;
+  background-color: #6a3636;
 }
+
 .section-title {
 	margin-bottom: 70px;
 }
@@ -186,15 +198,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) no-repeat center bottom;
-	background-color: #e5e5e5;
+	background: url(../img/pexels-pixabay-326333.jpg) no-repeat center bottom;
+	background-color: #ffffff00;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.40);
+	background: rgba(0, 0, 0, 0);
 }
 .intro h1 {
 	color: #fff;
@@ -385,22 +397,22 @@ ol.type li a:hover {
 }
 /* Team Section */
 #team {
-	color: #fff;
-	background: #9f6d19 url(../img/team-bg.jpg) center top no-repeat;
+	color: #000000;
+	background: #c4c4c400 url(../img/team-bg.jpg) center top no-repeat;
 	background-size: cover;
 }
 #team .overlay {
 	padding: 120px 0;
-	background: rgba(125, 85, 50, 0.9);
+	background: rgb(255, 255, 255);
 }
 #team h2, #team p {
-	color: #fff;
+	color: #000000;
 }
 #team hr {
-	background: #fff;
+	background: #000000;
 }
 #team h3 {
-	color: #fff;
+	color: #000000;
 	font-weight: 500;
 	font-size: 20px;
 	margin: 5px 0;
