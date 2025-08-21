@@ -21,10 +21,10 @@ html {
 }
 
 #intro-bg {
-	padding: 20% 40% 20% 40%;
+	
 	width: 90%;
-	max-width: 1000px;
-	height: 600px;
+	max-width: 1200px;
+	height: 675px;
 	margin: 130px auto 0 auto;
 	background-size: cover;
 	/* ปรับจาก cover เป็น contain */
