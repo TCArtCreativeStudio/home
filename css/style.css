@@ -23,14 +23,14 @@ html {
 	width: 90%;
 	max-width: 1000px;
 	height: 600px;
-	margin: 120px auto 0 auto;
-	background-size: contain;
+	margin: 150px auto 0 auto;
+	background-size: cover;
 	/* ปรับจาก cover เป็น contain */
 	background-repeat: no-repeat;
 	/* ไม่ให้ภาพซ้ำ */
 	background-position: center;
 	/* อยู่ตรงกลาง */
-	border: 8px solid rgba(240, 240, 240, 0.486);
+	border: 8px solid rgba(255, 255, 255, 0.868);
 	border-radius: 20px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 	position: relative;
