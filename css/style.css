@@ -23,7 +23,7 @@ html {
 	width: 90%;
 	max-width: 1000px;
 	height: 600px;
-	margin: 150px auto 0 auto;
+	margin: 130px auto 0 auto;
 	background-size: cover;
 	/* ปรับจาก cover เป็น contain */
 	background-repeat: no-repeat;
