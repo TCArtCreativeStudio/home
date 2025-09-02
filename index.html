@@ -1,31 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TC ART CREATIVE Studio</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <!-- Favicons -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+  <!-- CSS และ Font -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css">
+  <link rel="stylesheet" href="css/nivo-lightbox/default.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
   <style>
-    /* Portfolio Layout */
     .portfolio-layout {
       display: flex;
       flex-direction: column;
@@ -33,17 +21,6 @@
       gap: 30px;
       padding: 0 15px;
     }
-
-    /* รูปใหญ่ตรงกลาง */
-    .big-center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      width: 100%;
-    }
-
     .big-center img {
       width: 100%;
       max-width: 1000px;
@@ -54,12 +31,9 @@
       cursor: pointer;
       transition: transform 0.3s ease;
     }
-
     .big-center img:hover {
       transform: scale(1.05);
     }
-
-    /* แถวรูปหลายรูป */
     .row-three {
       display: flex;
       justify-content: center;
@@ -68,7 +42,6 @@
       width: 100%;
       flex-wrap: wrap;
     }
-
     .row-three img {
       width: 30%;
       min-width: 180px;
@@ -76,40 +49,40 @@
       cursor: pointer;
       transition: transform 0.3s ease;
     }
-
     .row-three img:hover {
       transform: scale(1.05);
     }
-
-    /* ปุ่ม Explore */
     .small-center button {
       margin-top: 20px;
     }
-
-    /* Responsive Tablet */
     @media (max-width: 768px) {
       .big-center img {
         width: 95%;
       }
-
       .row-three img {
         width: 45%;
       }
     }
-
-    /* Responsive Mobile */
     @media (max-width: 480px) {
       .row-three {
         flex-direction: column;
         gap: 15px;
         align-items: center;
       }
-
       .row-three img {
         width: 80%;
       }
     }
 
+    /* เอฟเฟ็กต์ Fade ของภาพสุ่ม */
+    #random-img {
+      opacity: 1;
+      transition: opacity 0.8s ease-in-out;
+      max-width: 1000px;
+      width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
   </style>
 </head>
 
@@ -145,7 +118,7 @@
 
   <!-- Header -->
   <header id="header">
-    <div class="intro" id="intro-bg">
+    <div class="intro" id="intro-bg" style="background-image: url('img/intro-bg2.jpg');">
       <div class="overlay">
         <div class="container">
           <div class="row">
@@ -153,7 +126,27 @@
               <div class="intro-text-frame">
                 <h1><strong>TC ART </strong> <span>-</span> CREATIVE Studio</h1>
                 <p>รับออกแบบ และผลิตงาน Art craft ตกแต่งพื้นที่ วัสดุเหล็ก ไม้ ไฟเบอร์ และวัสดุผสม</p>
-                <a href="about.html" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                
+                <div style="margin-top: 20px;">
+ <div class="social-icons" >
+  <a href="https://www.facebook.com/profile.php?id=61574732772816" target="_blank" class="icontext">
+    <img src="img/icon/facebook.png" alt="Facebook">
+    <span>Tc art creative open studio</span>
+  </a>
+  <a href="https://www.instagram.com/tc_art_creative_studio?igsh=MXhsdDhtMDExbmR5ZQ==" target="_blank" class="icontext">
+    <img src="img/icon/IG.png" alt="Instagram">
+    <span>tc_art_creative_studio
+</span>
+  </a>
+  <a href="https://lin.ee/LLypmqh" target="_blank" class="icontext">
+    <img src="img/icon/line.png" alt="LINE">
+    <span>tc_art_studio</span>
+  </a>
+</div>
+<div style="margin-top: 10%;"></div>
+<div><a href="about.html" class="btn btn-custom btn-lg page-scroll">Learn More</a></div>
+
+
               </div>
             </div>
           </div>
@@ -162,11 +155,15 @@
     </div>
   </header>
 
+  <!-- Random Image Section -->
+  <div id="random-gallery" style="text-align:center; padding: 40px 0;">
+    <img id="random-img" src="img/random/1.png">
+  </div>
+
   <!-- Portfolio Section -->
   <div id="portfolio" style="padding: 60px 0; background: #fff;">
     <div class="container">
       <div class="portfolio-layout">
-        <!-- รูปใหญ่ -->
         <div class="big-center">
           <img src="img/index/12.png" alt="Work 12">
           <img src="img/index/10.png" alt="Work 10">
@@ -175,22 +172,16 @@
         <div class="big-center">
           <img src="img/index/1.png" alt="Work 1">
         </div>
-
-        <!-- แถว 2 -->
         <div class="row-three">
           <img src="img/index/3.png" alt="Work 3">
           <img src="img/index/4.png" alt="Work 4">
           <img src="img/index/5.png" alt="Work 5">
         </div>
-
-        <!-- แถว 3 -->
         <div class="row-three">
           <img src="img/index/6.png" alt="Work 6">
           <img src="img/index/7.png" alt="Work 7">
           <img src="img/index/8.png" alt="Work 8">
         </div>
-
-        <!-- ปุ่ม Explore -->
         <div class="small-center">
           <button onclick="location.href='portfolio.html'" class="btn btn-custom">
             Explore More
@@ -209,54 +200,38 @@
   </div>
 
   <!-- Scripts -->
-  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/SmoothScroll.js"></script>
-  <script type="text/javascript" src="js/nivo-lightbox.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.js"></script>
-  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-  <script type="text/javascript" src="js/contact_me.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/jquery.1.11.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="js/nivo-lightbox.js"></script>
+  <script src="js/jquery.isotope.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+  <script src="js/main.js"></script>
 
-  <!-- Random Background Slide Every 2s -->
+  <!-- Random Image Script -->
   <script>
     const bgImages = [
-      'img/random/1.png',
-      //'img/random/2.png',
-      'img/random/3.png',
-      'img/random/4.png',
-      'img/random/5.png',
-      'img/random/6.png',
-      'img/random/7.png',
-      'img/random/8.png',
-      'img/random/9.png',
-      'img/random/10.png',
-      'img/random/11.png',
-      'img/random/12.png',
-      'img/random/13.png',
-      
+      'img/random/1.png','img/random/3.png','img/random/4.png',
+      'img/random/5.png','img/random/6.png','img/random/7.png',
+      'img/random/8.png','img/random/9.png','img/random/10.png',
+      'img/random/11.png','img/random/12.png','img/random/13.png'
     ];
 
-    let index = 0;
-    const introBg = document.getElementById('intro-bg');
-
-    function changeBackgroundRandom() {
-      const randomIndex = Math.floor(Math.random() * bgImages.length);
-      const img = new Image();
-      img.src = bgImages[randomIndex];
-
-      // รอให้ภาพโหลดเสร็จก่อนเปลี่ยน background
-      img.onload = () => {
-        introBg.style.backgroundImage = `url('${bgImages[randomIndex]}')`;
-      };
+    function changeRandomImage() {
+      const imgElement = document.getElementById('random-img');
+      imgElement.style.opacity = 0;
+      setTimeout(() => {
+        const randomIndex = Math.floor(Math.random() * bgImages.length);
+        imgElement.src = bgImages[randomIndex];
+        imgElement.onload = () => {
+          imgElement.style.opacity = 1;
+        };
+      }, 400);
     }
 
-    // เรียกครั้งแรกตอนโหลดหน้า
-    changeBackgroundRandom();
-
-    // เปลี่ยนทุก 2 วินาที แต่รอภาพโหลดเสร็จ
-    setInterval(changeBackgroundRandom, 3000);
+    changeRandomImage();
+    setInterval(changeRandomImage, 3000);
   </script>
 </body>
-
 </html>

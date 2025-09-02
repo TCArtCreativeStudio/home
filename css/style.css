@@ -10,6 +10,47 @@ html {
 	margin: 0;
     padding: 0;
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15%; /* ระยะห่างระหว่างไอคอนเพิ่มขึ้น */
+  margin-top: 5%;
+}
+
+.social-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  width: 180px; /* กำหนดความกว้างเท่ากัน */
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  background: rgba(177, 177, 177, 0.527);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.social-icons a span {
+  margin-top: 8px;
+}
+/* สีของข้อความแต่ละแพลตฟอร์ม */
+.social-icons a.icontext span {
+  color: #474747; 
+  text-shadow: 3px 3px 8px rgb(255, 255, 255);
+}
 
 .contact-box {
 	border: 2px solid rgb(255, 255, 255) !important;
@@ -20,45 +61,6 @@ html {
 	color: white !important;
 }
 
-#intro-bg {
-	
-	width: 90%;
-	max-width: 1200px;
-	height: 675px;
-	margin: 130px auto 0 auto;
-	background-size: cover;
-	/* ปรับจาก cover เป็น contain */
-	background-repeat: no-repeat;
-	/* ไม่ให้ภาพซ้ำ */
-	background-position: center;
-	/* อยู่ตรงกลาง */
-	border: 8px solid rgba(255, 255, 255, 0.868);
-	border-radius: 20px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-	position: relative;
-	transition: background-image 0.5s ease-in-out;
-}
-
-/* ข้อความอยู่ตรงกลาง */
-.intro-text-frame {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: block;
-	width: 80%;
-	/* กล่องกว้างขึ้น */
-	max-width: 700px;
-	/* จำกัดความกว้างสูงสุด */
-	padding: 15px 20px;
-	/* ลด padding ให้ตัวหนังสือชิดกรอบขึ้น */
-	background: rgba(0, 0, 0, 0.7);
-	/* พื้นหลังโปร่งแสง */
-	border-radius: 20px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-	text-align: center;
-	color: #fff;
-}
 
 .intro-text-frame h1 {
 	margin: 0 0 10px 0;
@@ -84,8 +86,8 @@ html {
 	font-size: 68px;
 	font-weight: 400;
 	margin-top: 0;
-	margin-bottom: 10px;
-	letter-spacing: -1px;
+	
+	
 }
 
 .intro span {
@@ -104,9 +106,9 @@ html {
 .intro-text-frame {
 	display: inline-block;
 	/* ขนาดพอดีกับข้อความ */
-	padding: 20px 30px;
+	padding: 1px 1px;
 	/* ระยะขอบภายในกรอบ */
-	background: rgba(0, 0, 0, 0.448);
+	background: rgba(212, 212, 212, 0);
 	/* สีพื้นหลังโปร่งแสง */
 	border: 0px solid #fff;
 	/* กรอบสีขาว */
@@ -120,13 +122,15 @@ html {
 
 .intro-text-frame h1 {
 	margin: 0 0 10px 0;
-	font-size: 48px;
-	/* ปรับขนาดตามต้องการ */
+	font-size: 70px;
+	font-weight: 600;
+	text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 .intro-text-frame p {
 	margin: 0;
-	font-size: 18px;
+	font-size: 20px;
+	text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
@@ -266,8 +270,8 @@ a:focus,
 }
 
 #menu.navbar-default {
-	background-color: rgb(186, 186, 186);
-	border-color: rgba(255, 255, 255, 0.633);
+	background-color: rgba(255, 255, 255, 0.69);
+	border-color: rgba(0, 0, 0, 0.47);
 }
 
 #menu a.navbar-brand {
@@ -296,9 +300,9 @@ a:focus,
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-	color: #fff !important;
+	color: #ffffff !important;
 	/* ตัวอักษรสีขาว */
-	background-color: #9f6d19 !important;
+	background-color: #b5770c !important;
 	/* พื้นหลังสีน้ำตาลทอง */
 	border-radius: 6px;
 	padding: 8px 12px;
@@ -336,7 +340,7 @@ a:focus,
 	border: 0;
 	padding: 14px 20px;
 	margin: 0;
-	font-size: 17px;
+	font-size: 14px;
 	border-radius: 12px 0 12px 0;
 	margin-top: 20px;
 	transition: all 0.5s;
