@@ -10,6 +10,85 @@ html {
 	margin: 0;
     padding: 0;
 }
+/* ===== Responsive adjustments ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .intro-text-frame h1 {
+    font-size: 5vw; /* ลดขนาดข้อความ */
+  }
+  
+  .intro-text-frame p {
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    gap: 8%; /* ลดระยะห่างไอคอน */
+  }
+
+  header .intro-text {
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+  }
+
+  #about img,
+  #services img,
+  #team .team-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .intro-text-frame h1 {
+    font-size: 6vw;
+  }
+
+  .intro-text-frame p {
+    font-size: 0.95rem;
+  }
+
+  .social-icons {
+    gap: 5%; /* ลดระยะห่างไอคอนลงอีก */
+    flex-wrap: wrap; /* ให้ไอคอน wrap */
+  }
+
+  .social-icons a {
+    width: auto; /* ยืดตาม content */
+  }
+
+  header .intro-text {
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .intro-text-frame h1 {
+    font-size: 8vw;
+  }
+
+  .intro-text-frame p {
+    font-size: 0.85rem;
+  }
+
+  .social-icons {
+    gap: 3%;
+  }
+
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  header .intro-text {
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+  }
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -302,7 +381,7 @@ a:focus,
 .navbar-default .navbar-nav>.active>a:focus {
 	color: #ffffff !important;
 	/* ตัวอักษรสีขาว */
-	background-color: #b5770c !important;
+	background-color: #9f6d19 !important;
 	/* พื้นหลังสีน้ำตาลทอง */
 	border-radius: 6px;
 	padding: 8px 12px;
